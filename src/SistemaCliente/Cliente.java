@@ -13,13 +13,15 @@ import java.io.DataOutput;
 import java.io.DataOutputStream;
 
 /**
- *
- * @author Citlali Orduño
+ * Clase que representa el cliente para la comunicacion entre sockets
+ * @author Equipo 5 
  */
 public class Cliente {
 
+    
     private Socket cliente;
 
+    //Metodo el cual envia los eventos
     public void enviar(Event evento) throws IOException {
 
         this.cliente = new Socket("localhost", 3312);
