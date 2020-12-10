@@ -1,23 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package SistemaEventos;
+
+/* Librearias a utilizar. */
 import dominio.Jugador;
 import dominio.Partida;
+
 /**
+ * Esta clase tiene como finalidad de preparar el evento abandonar partida.
  *
- * @author Citlali Orduño
+ * @author Equipo 5
  */
-public class AbandonarPartidaEvent extends Event{
-    
+public class AbandonarPartidaEvent extends Event {
+
+    /* Variables utilizados en el evento abandonar partida. */
     private Jugador jugadorActual;
     private Partida partida;
 
+    /* Constructor vacio. */
     public AbandonarPartidaEvent() {
     }
 
+    /* Conjunto de sets y gests utilizados en el evento abandonar partida. */
     public AbandonarPartidaEvent(Jugador jugadorActual, Partida partida) {
         this.jugadorActual = jugadorActual;
         this.partida = partida;
@@ -38,8 +40,5 @@ public class AbandonarPartidaEvent extends Event{
     public void setPartida(Partida partida) {
         this.partida = partida;
     }
-    
-    
-    
-    
+
 }

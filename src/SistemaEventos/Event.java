@@ -1,23 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package SistemaEventos;
 
+/* Librearias a utilizar. */
 import java.io.Serializable;
 
 /**
+ * Esta clase prepara los eventos, implementa la clase serializable la cual
+ * serializar un objeto.
  *
- * @author Citlali Orduño
+ * @author Equipo 5
  */
-public class Event implements Serializable{
+public class Event implements Serializable {
 
+    /* Constructor vacio.*/
     public Event() {
     }
-    
-    public Class getType(){
+
+    /* Metodo para obtener el tipo de clase. */
+    public Class getType() {
         return getClass();
     }
-    
+
 }

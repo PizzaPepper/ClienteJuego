@@ -1,25 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package SistemaEventos;
 
+/* Librearias a utilizar. */
 import dominio.Jugador;
 import dominio.Partida;
 
 /**
+ * Esta clase tiene como finalidad de preparar el evento crear partida.
  *
- * @author Citlali Orduño
+ * @author Equipo 5
  */
 public class CrearPartidaEvent extends Event {
-    
-     private Jugador jugadorActual;
+
+    /* Variables utilizados en el evento crear partida. */
+    private Jugador jugadorActual;
     private Partida partida;
 
+    /* Constructor vacio. */
     public CrearPartidaEvent() {
     }
 
+    /* Conjunto de sets y gests utilizados en el evento crear partida. */
     public CrearPartidaEvent(Jugador jugadorActual, Partida partida) {
         this.jugadorActual = jugadorActual;
         this.partida = partida;
@@ -40,8 +40,5 @@ public class CrearPartidaEvent extends Event {
     public void setPartida(Partida partida) {
         this.partida = partida;
     }
-    
-    
-    
-    
+
 }

@@ -1,30 +1,31 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package SistemaEventos;
 
+/* Librearias a utilizar. */
 import dominio.Jugador;
 import dominio.Partida;
 
 /**
+ * Esta clase tiene como finalidad de preparar el evento de unir partida.
  *
- * @author Citlali Orduño
+ * @author Equipo 5
  */
-public class UnirPartidaEvent extends Event{
-    
+public class UnirPartidaEvent extends Event {
+
+    /* Variables utilizados en el evento unir partida. */
     private Jugador jugadorActual;
     private Partida partida;
 
+    /* Constructor que inicializa las variables del evento unir partida.*/
     public UnirPartidaEvent(Jugador jugadorActual, Partida partida) {
         this.jugadorActual = jugadorActual;
         this.partida = partida;
     }
 
+    /* Constructor vacio. */
     public UnirPartidaEvent() {
     }
-
+ 
+    /* Conjunto de sets y gests utilizados en el evento unir partida. */
     public Jugador getJugadorActual() {
         return jugadorActual;
     }
@@ -41,8 +42,4 @@ public class UnirPartidaEvent extends Event{
         this.partida = partida;
     }
 
-    
-
 }
-
-

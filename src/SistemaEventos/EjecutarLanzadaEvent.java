@@ -1,27 +1,27 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package SistemaEventos;
 
+/* Librearias a utilizar. */
 import dominio.Apuesta;
 import dominio.Jugador;
 import dominio.Movimiento;
 
 /**
+ * Esta clase tiene como finalidad de preparar el evento de ejecutar lanzada.
  *
- * @author Citlali Orduño
+ * @author Equipo 5
  */
-public class EjecutarLanzadaEvent extends Event{
-    
+public class EjecutarLanzadaEvent extends Event {
+
+    /* Variables utilizados en el evento ejecutar lanzada. */
     private Jugador jugadorActual;
     private Apuesta apuesta;
     private Movimiento movimiento;
 
+    /* Constructor vacio. */
     public EjecutarLanzadaEvent() {
     }
 
+    /* Conjunto de sets y gests utilizados en el evento ejecutar lanzada. */
     public EjecutarLanzadaEvent(Jugador jugadorActual, Apuesta apuesta, Movimiento movimiento) {
         this.jugadorActual = jugadorActual;
         this.apuesta = apuesta;
@@ -51,5 +51,5 @@ public class EjecutarLanzadaEvent extends Event{
     public void setMovimiento(Movimiento movimiento) {
         this.movimiento = movimiento;
     }
-    
+
 }
